@@ -27,7 +27,7 @@ class Contact extends Component {
             message: this.state.message
         }
         
-        axios.post('API_URI', data)
+        axios.post('https://portfolio-node-9xaqymhol.vercel.app/', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm())
         })
