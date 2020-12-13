@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+
+.about-me-div {
+    margin: 0 auto;
+    margin-top: 100px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.562);
+    max-width: 90%;
+}
+
+.about-me {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #314456;
+    letter-spacing: 5px;
+}
+
+.about-me-para {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 22px;
+    margin-bottom: 100px;
+    line-height: 40px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 665px) {
+    .about-me-div {
+        margin-top: 40px;
+    }
+    .about-me-para {
+        font-size: 18px;
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+    .about-me {
+        font-size: 30px;
+    }
+  }

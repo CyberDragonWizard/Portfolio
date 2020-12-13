@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+.paragraph-info-book {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paragraph-info-stoor {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paragraph-info-election {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paragraph-info-whenieat {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-img-modal {
+    cursor: arrow;
+    border-radius: 8px;
+    height: 60%;
+    box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.356);
+}
+
+@media only screen and (max-width: 665px) {
+    .project-img-modal {
+        height: 30%;
+    }
+    
+  }

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+.project-info {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: #314455;
+    height: 30px;
+    width: 90px;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+    margin-right: 12px;
+    margin-top: 17px;
+    transition: all .2s ease-in-out;
+}
+
+.project-info:hover {
+    background-color: #49657e;
+}
+
+.projects-div {
+    margin: 0 auto;
+    margin-top: 100px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.562);
+    max-width: 90%;
+}
+
+.projects {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #314456;
+    letter-spacing: 5px;
+}
+
+.projects-list {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-div {
+    box-shadow: 0 2px 8px 4px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(238, 238, 238);
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 6px;;
+}
+
+.project-div-last {
+    box-shadow: 0 2px 8px 4px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(238, 238, 238);
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+
+
+.project-div:hover {
+    box-shadow: 0 4px 16px 8px rgba(0,0,0,0.2);
+  }
+
+.project-img {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon-list {
+    display: inline;
+}
+
+@media only screen and (max-width: 665px) {
+    .projects-div {
+        margin-top: 40px;
+    }
+    .project-div {
+        margin: 20px;
+    }
+    .projects{
+        font-size: 30px;
+    }
+    .project-div-last {
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+  }
