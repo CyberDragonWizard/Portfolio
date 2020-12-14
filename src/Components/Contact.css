@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 8px 4px rgba(0,0,0,0.2);
-    width: 600px;
+    max-width: 600px;
     background-color: white;
     height: 400px;
     border-radius: 8px;
@@ -60,6 +60,7 @@
     font-size: 16px;
     height: 30px;
     width: 400px;
+    min-width: 300px;
     margin: 3px;
     border-radius: 4px;
     border: 1px solid black;
@@ -70,7 +71,8 @@
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
     height: 180px;
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     margin: 3px;
     border-radius: 4px;
     border: 1px solid black;
@@ -85,7 +87,21 @@
     .contact{
         font-size: 30px;
     }
+    .contact-form {
+        height: 500px;
+    }
     .submit-button {
         margin-bottom: 40px;
+        margin-left: 0px;
     }
+    .input {
+        width: 250px;
+    }
+    .input-message {
+        width: 250px;
+    }
+    .input-div {
+        margin-top: 10px;
+    }
+   
   }
