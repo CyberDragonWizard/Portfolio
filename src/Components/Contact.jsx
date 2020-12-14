@@ -32,7 +32,7 @@ class Contact extends Component {
         this.setState({ status: "Sending" });  
         axios({
           method: "POST",
-          url: "https://portfolio-node-sand.vercel.app/",
+          url: "https://safe-fortress-63931.herokuapp.com/contact",
           data: this.state,
         }).then((response) => {
           if (response.data.status === "sent") {
