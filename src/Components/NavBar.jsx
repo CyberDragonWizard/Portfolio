@@ -103,7 +103,18 @@ class NavBar extends Component {
                                 </Link>
                                 </li>
 
-                                <li onClick={() => this.state.open} className='nav-link-last'>Contact</li>
+                                <li onClick={() => this.state.open} className='nav-link-last'>
+                                <Link
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+                                >
+                                    Contact
+                                    </Link>
+                                    </li>
                                 </div>
                             </ul>
                         )}
