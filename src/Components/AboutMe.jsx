@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div className='about-me-div'>
             <h2 className='about-me' id='about-me'>About Me</h2>
             <p className='about-me-para'>I am a full-stack Software Developer from Baltimore, Maryland.
-                                        Whether it is front-end, back-end, logic, or styling. I love
+                                        Whether if it is front-end, back-end, logic, or styling, I love
                                         pushing myself to solve problems and grow as a developer. Throughout
                                         my whole life, I've always found passion in projects that allows
                                         me to use my technically and creative mind.
