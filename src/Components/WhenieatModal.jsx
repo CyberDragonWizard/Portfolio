@@ -79,6 +79,7 @@ export default function WhenieatModal() {
           <div className={classes.paper}>
           <p className='paragraph-info-whenieat'>
             WhenIEat is a full-stack nutrition and calorie tracker, built off of ReactJS and Ruby on Rails.
+            Note: the front-end is still curently in development.
             </p>
             <img src={Whenieat} className='project-img-modal' alt='portimg' />
      
