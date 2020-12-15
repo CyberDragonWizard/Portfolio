@@ -93,7 +93,6 @@
     }
     .submit-button {
         margin-bottom: 40px;
-        margin-left: 0px;
     }
     .input {
         width: 250px;
@@ -105,4 +104,10 @@
         margin-top: 10px;
     }
    
+  }
+
+  @media only screen and (max-width: 687px) {
+    .submit-button {
+        margin-left: 0px;
+    }
   }
