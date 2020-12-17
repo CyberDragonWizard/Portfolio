@@ -20,7 +20,10 @@ const useStyles = makeStyles((theme) => ({
     width: '600px',
     marginBottom: '2%',
     position: 'fixed',
-    height: '510px'
+    height: '510px',
+    "@media only screen and (max-width: 665px)": {
+      width: '300px'
+    }
   },
   button: {
       fontFamily: 'Titillium Web',
