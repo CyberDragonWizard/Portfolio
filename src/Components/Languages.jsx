@@ -11,6 +11,7 @@ import PSQL from '../Assets/postgresql-original.svg';
 import Mongoose from '../Assets/mongoose.jpg';
 import Mongo from '../Assets/mongodb-original.svg';
 import MUI from '../Assets/materialui-original.svg';
+import Angular from '../Assets/angular-seeklogo.com.svg';
 
 export default function Languages() {
     return (
@@ -36,6 +37,11 @@ export default function Languages() {
                     <div className='icon-div'>
                     <img src={ReactJS} className='icon' alt='portimg' height='65px' weight='65px' />
                         <h3 className='item'>ReactJS</h3>
+                    </div>
+
+                    <div className='icon-div'>
+                    <img src={Angular} className='icon' alt='portimg' height='65px' weight='65px' />
+                        <h3 className='item'>Angular</h3>
                     </div>
 
                     <div className='icon-div'>

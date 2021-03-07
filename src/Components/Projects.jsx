@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import Book from '../Assets/bookshelf.png';
-import Stoor from '../Assets/Stoor.png';
+import HackerAmp from '../Assets/hackeramp.png';
 import Ballot from '../Assets/ballot.png';
 import Whenieat from '../Assets/whenieat.png';
 import JS from '../Assets/javascript-original.svg';
@@ -13,7 +13,8 @@ import Rails from '../Assets/rails-original-wordmark.svg';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { makeStyles } from '@material-ui/core/styles';
 import BookShelfModal from './BookShelfModal';
-import StoorModal from './StoorModal';
+import Angular from '../Assets/angular-seeklogo.com.svg';
+import HackerAmpModal from './HackerAmpModal';
 import ElectionModal from './ElectionModal';
 import WhenieatModal from './WhenieatModal'
 
@@ -57,20 +58,21 @@ export default function Projects() {
                     </div>
 
                     <div className='project-div'>
-                        <a href ='https://trusting-northcutt-6679b6.netlify.app/' target = "_blank">
-                            <img src={Stoor} className='project-img' alt='portimg' height='60%' width='100%'/>
+                        <a href ='https://hackeramp.herokuapp.com/' target = "_blank">
+                            <img src={HackerAmp} className='project-img' alt='portimg' height='60%' width='100%'/>
                         </a>
                         <div className='icon-list'>
                             <img src={HTML} className='icon' alt='portimg' height='35px' weight='35px' />
                             <img src={JS} className='icon' alt='portimg' height='35px' weight='35px' />
-                            <img src={ReactJS} className='icon' alt='portimg' height='35px' weight='35px' />
+                            <img src={Express} className='icon' alt='portimg' height='35px' weight='35px' />
+                            <img src={Angular} className='icon' alt='portimg' height='35px' weight='35px' />
                         </div>
                         <div>
-                        <a href = "https://github.com/CyberDragonWizard/Stoor/tree/master/stoor" target = "_blank">
+                        <a href = "https://github.com/CyberDragonWizard/HackerAmp" target = "_blank">
                             <GitHubIcon style={{ fontSize: '40px' }} className={classes.github} />
                         </a>
                         </div>
-                        <StoorModal />
+                        <HackerAmpModal />
                     </div>
 
                     <div className='project-div'>
