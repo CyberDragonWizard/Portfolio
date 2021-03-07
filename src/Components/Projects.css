@@ -80,6 +80,12 @@
     cursor: pointer;
 }
 
+.project-img-modal {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .icon-list {
     display: inline;
 }
