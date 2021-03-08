@@ -38,7 +38,7 @@ export default function Name() {
                         <GitHubIcon style={{ fontSize: '40px' }} className={classes.icon} />
                     </a>
 
-                    <a href = "https://www.linkedin.com/in/brian-nester-6a168710b/" target = "_blank" rel="noopener noreferrer">
+                    <a href = "https://www.linkedin.com/in/brian-nester/" target = "_blank" rel="noopener noreferrer">
                         <LinkedInIcon style={{ fontSize: '40px' }} className={classes.icon}/>  
                     </a>
 
