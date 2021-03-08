@@ -2,6 +2,7 @@ import React from 'react';
 import './Languages.css';
 import HTML from '../Assets/html5-original.svg';
 import JS from '../Assets/javascript-original.svg';
+import Angular from '../Assets/angular-seeklogo.com.svg';
 import Node from '../Assets/nodejs-original.svg';
 import ReactJS from '../Assets/react-original.svg';
 import Express from '../Assets/express-original.svg';
@@ -36,6 +37,11 @@ export default function Languages() {
                     <div className='icon-div'>
                     <img src={ReactJS} className='icon' alt='portimg' height='65px' weight='65px' />
                         <h3 className='item'>ReactJS</h3>
+                    </div>
+
+                    <div className='icon-div'>
+                    <img src={Angular} className='icon' alt='portimg' height='65px' weight='65px' />
+                        <h3 className='item'>Angular</h3>
                     </div>
 
                     <div className='icon-div'>

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import Stoor from '../Assets/Stoor.png';
+import HackerAmp from '../Assets/hackeramp.png';
 import './para.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -82,9 +82,9 @@ export default function StoorModal() {
         <Fade in={open}>
           <div className={classes.paper}>
           <p className='paragraph-info-stoor'>
-                Stoor Manager is a ReactJS inventory management app that uses axios to GET/render data via Airtable, as well as POST and DELETE.
+                HackerAmp is full-stack coding and technology related blog app. This app was built using the MEAN tech stack.
             </p>
-            <img src={Stoor} className='project-img-modal' alt='portimg' />
+            <img src={HackerAmp} className='project-img-modal' alt='portimg' />
         
           </div>
         </Fade>

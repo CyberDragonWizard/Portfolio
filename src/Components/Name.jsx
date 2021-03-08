@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import './Name.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -34,11 +34,11 @@ export default function Name() {
                 <img className='port-img' src={ProfileImg} alt='portimg' height='255px' weight='255px' />
                 <div className='icon-links'>
                     
-                    <a href = "https://github.com/CyberDragonWizard" target = "_blank">
+                    <a href = "https://github.com/CyberDragonWizard" target = "_blank" rel="noopener noreferrer">
                         <GitHubIcon style={{ fontSize: '40px' }} className={classes.icon} />
                     </a>
 
-                    <a href = "https://www.linkedin.com/in/brian-nester-6a168710b/" target = "_blank">
+                    <a href = "https://www.linkedin.com/in/brian-nester/" target = "_blank" rel="noopener noreferrer">
                         <LinkedInIcon style={{ fontSize: '40px' }} className={classes.icon}/>  
                     </a>
 
