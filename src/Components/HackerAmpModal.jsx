@@ -82,7 +82,7 @@ export default function StoorModal() {
         <Fade in={open}>
           <div className={classes.paper}>
           <p className='paragraph-info-stoor'>
-                Stoor Manager is a ReactJS inventory management app that uses axios to GET/render data via Airtable, as well as POST and DELETE.
+                HackerAmp is full-stack coding and technology related blog app. This app was built using the MEAN tech stack.
             </p>
             <img src={HackerAmp} className='project-img-modal' alt='portimg' />
         

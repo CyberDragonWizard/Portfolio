@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import Book from '../Assets/bookshelf.png';
-import HackerAmp from '../Assets/hackeramp.png';
+import HackerAmp from '../Assets/hackerampscreen.png';
 import Ballot from '../Assets/ballot.png';
 import Whenieat from '../Assets/whenieat.png';
 import JS from '../Assets/javascript-original.svg';
@@ -42,7 +42,7 @@ export default function Projects() {
                 <div className='projects-list'>
 
                     <div className='project-div'>
-                        <a href ='https://cyberdragonwizard.github.io/BookShelf/' target = "_blank">
+                        <a href ='https://cyberdragonwizard.github.io/BookShelf/' target = "_blank" rel="noopener noreferrer">
                             <img src={Book} className='project-img' alt='portimg' height='60%' width='100%'/>
                         </a>
                         <div className='icon-list'>
@@ -50,7 +50,7 @@ export default function Projects() {
                             <img src={JS} className='icon' alt='portimg' height='35px' weight='35px' />
                         </div>
                         <div>
-                        <a href = "https://github.com/CyberDragonWizard/BookShelf" target = "_blank">
+                        <a href = "https://github.com/CyberDragonWizard/BookShelf" target = "_blank" rel="noopener noreferrer">
                             <GitHubIcon style={{ fontSize: '40px' }} className={classes.github} />
                         </a>
                         </div>
@@ -58,7 +58,7 @@ export default function Projects() {
                     </div>
 
                     <div className='project-div'>
-                        <a href ='https://hackeramp.herokuapp.com/' target = "_blank">
+                        <a href ='https://hackeramp.herokuapp.com/' target = "_blank" rel="noopener noreferrer">
                             <img src={HackerAmp} className='project-img' alt='portimg' height='60%' width='100%'/>
                         </a>
                         <div className='icon-list'>
@@ -68,7 +68,7 @@ export default function Projects() {
                             <img src={Angular} className='icon' alt='portimg' height='35px' weight='35px' />
                         </div>
                         <div>
-                        <a href = "https://github.com/CyberDragonWizard/HackerAmp" target = "_blank">
+                        <a href = "https://github.com/CyberDragonWizard/HackerAmp" target = "_blank" rel="noopener noreferrer">
                             <GitHubIcon style={{ fontSize: '40px' }} className={classes.github} />
                         </a>
                         </div>
@@ -76,7 +76,7 @@ export default function Projects() {
                     </div>
 
                     <div className='project-div'>
-                        <a href ='https://ballot-request-elections-app.netlify.app/' target = "_blank">
+                        <a href ='https://ballot-request-elections-app.netlify.app/' target = "_blank" rel="noopener noreferrer">
                             <img src={Ballot} className='project-img' alt='portimg' height='60%' width='100%'/>
                         </a>
                     <div className='icon-list'>
@@ -86,7 +86,7 @@ export default function Projects() {
                             <img src={Express} className='icon' alt='portimg' height='35px' weight='35px' />
                         </div>
                         <div>
-                        <a href = "https://github.com/CyberDragonWizard/election-app" target = "_blank">
+                        <a href = "https://github.com/CyberDragonWizard/election-app" target = "_blank" rel="noopener noreferrer">
                             <GitHubIcon style={{ fontSize: '40px' }} className={classes.github} />
                         </a>
                         </div>
@@ -94,7 +94,7 @@ export default function Projects() {
                     </div>
 
                     <div className='project-div-last'>
-                    <a href ='https://keen-blackwell-031369.netlify.app/' target = "_blank">
+                    <a href ='https://keen-blackwell-031369.netlify.app/' target = "_blank" rel="noopener noreferrer">
                         <img src={Whenieat} className='project-img' alt='portimg' height='60%' width='100%'/>
                     </a>
                     <div className='icon-list'>
@@ -105,7 +105,7 @@ export default function Projects() {
                             <img src={Rails} className='icon' alt='portimg' height='35px' weight='35px' />
                         </div>
                         <div>
-                        <a href = "https://github.com/CyberDragonWizard/WhenIEat" target = "_blank">
+                        <a href = "https://github.com/CyberDragonWizard/WhenIEat" target = "_blank" rel="noopener noreferrer">
                             <GitHubIcon style={{ fontSize: '40px' }} className={classes.github} />
                         </a>
                         </div>
