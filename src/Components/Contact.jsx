@@ -6,53 +6,75 @@ import './Contact.css'
 
 class Contact extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-          name: "",
-          email: "",
-          message: "",
-          status: "Submit"
-        };   
-      }
+  state = {
+    name: "",
+    message: "",
+    email: "",
+    sent: false,
+    buttonText: "Send Message",
+    emailError: false,
+  };
 
-      handleChange(event) {
-        const field = event.target.id;
-        if (field === "name") {
-          this.setState({ name: event.target.value });
-        } else if (field === "email") {
-          this.setState({ email: event.target.value });
-        } else if (field === "message") {
-          this.setState({ message: event.target.value });
-        }
-      }
+  resetForm = () => {
+    this.setState({
+      name: "",
+      message: "",
+      email: "",
+      buttonText: "Message Sent",
+    });
 
-      handleSubmit(event) {
-        event.preventDefault();  
-        this.setState({ status: "Sending" });  
-        axios({
-          method: "POST",
-          url: "https://safe-fortress-63931.herokuapp.com/contact",
-          data: this.state,
-        }).then((response) => {
-          if (response.data.status === "sent") {
-            alert("Message Sent");
-            this.setState({ name: "", email: "", message: "", status: "Submit" });
-          } else if (response.data.status === "failed") {
-            alert("Message Failed");
-          }
-        });
-      }
+    setTimeout(() => {
+      this.setState({ sent: false });
+    }, 3000);
+  };
 
-    render() {
-        let buttonText = this.state.status;
+  handleChangeEmail(e) {
+    if (
+      !e.target.value.match(
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    ) {
+      this.setState({
+        email: e.target.value,
+      });
+      this.setState({ emailError: true });
+
+      if (this.state.email === "") {
+        this.setState({ emailError: false });
+      }
+    } else {
+      this.setState({ email: e.target.value, emailError: false });
+    }
+  }
+
+  formSubmit = async (e) => {
+    e.preventDefault();
+    this.setState({
+      buttonText: "...sending",
+    });
+
+    let data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
+    };
+
+    try {
+      await axios.post("https://safe-fortress-63931.herokuapp.com/contact", data);
+      this.setState({ sent: true }, this.resetForm());
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  render() {
         return(
             <div className='contact-div'>
             <h2 className='contact'>Contact</h2>
-                <form action="/contact" onSubmit={this.handleSubmit.bind(this)} className='contact-form' method='POST'>
+                <form onSubmit={(e) => this.formSubmit(e)} className='contact-form' method='POST'>
                     <div className='input-div'>
                     <input
-                    onChange={this.handleChange.bind(this)}
+                    onChange={(e) => this.setState({ name: e.target.value })}
                     type="text"
                     value={this.state.name}
                     className='input'
@@ -61,7 +83,7 @@ class Contact extends Component {
                     required
                     />
                     <input
-                    onChange={this.handleChange.bind(this)}
+                    onChange={(e) => this.handleChangeEmail(e)}
                     type="email"
                     value={this.state.email}
                     className='input'
@@ -70,14 +92,16 @@ class Contact extends Component {
                     required
                     />
                     <textarea
-                    onChange={this.handleChange.bind(this)}
+                    onChange={(e) => this.setState({ message: e.target.value })}
                     name='message'
                     className='input-message'
                     placeholder='Your Message'
                     id="message"
                     required
                     />
-                    <button className='submit-button' type='submit'>{buttonText}</button>
+                    <button className='submit-button' type='submit'>
+                    {this.state.buttonText}
+                    </button>
                     </div>
                 </form>
             
