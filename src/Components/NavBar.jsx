@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './NavBar.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import Pdf from '../Assets/resume.pdf';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 
 class NavBar extends Component {
     state = {
@@ -56,7 +56,7 @@ class NavBar extends Component {
             <div>
                 <nav>
                     <button className='resume-button'>
-                    <a href = {Pdf} target = "_blank" className='resume'>View Resume</a>
+                    <a href = {Pdf} target = "_blank" className='resume' rel="noopener noreferrer">View Resume</a>
                     </button>
                     <div className='burger' ref={this.container}>
                         {this.displayHamburgerMenu()}
