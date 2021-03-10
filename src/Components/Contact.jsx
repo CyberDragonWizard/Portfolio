@@ -32,7 +32,7 @@ class Contact extends Component {
         this.setState({ status: "Sending" });  
         axios({
           method: "POST",
-          url: "https://safe-fortress-63931.herokuapp.com/contact",
+          url: "https://safe-fortress-63931.herokuapp.com/",
           data: this.state,
         }).then((response) => {
           if (response.data.status === "sent") {
@@ -49,7 +49,7 @@ class Contact extends Component {
         return(
             <div className='contact-div'>
             <h2 className='contact'>Contact</h2>
-                <form onSubmit={this.handleSubmit.bind(this)} className='contact-form' method='POST'>
+                <form action="/contact" onSubmit={this.handleSubmit.bind(this)} className='contact-form' method='POST'>
                     <div className='input-div'>
                     <input
                     onChange={this.handleChange.bind(this)}
