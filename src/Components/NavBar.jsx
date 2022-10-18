@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './NavBar.css';
 import HamburgerMenu from 'react-hamburger-menu';
-import Pdf from '../Assets/resume.pdf';
+import Pdf from '../Assets/BrianNester-Resume.pdf';
 import { Link} from "react-scroll";
 
 class NavBar extends Component {
