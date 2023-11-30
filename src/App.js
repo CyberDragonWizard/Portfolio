@@ -8,7 +8,11 @@ import Contact from './Components/Contact'
 
 function App() {
   return (
-
+    <head>
+      <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20587511.js"></script>
+<!-- End of HubSpot Embed Code -->
+    </head>
     <div className="App">
       <NavBar />
       <Name />
